@@ -1,14 +1,19 @@
 html {
-  box-sizing: border-box;
-  -ms-overflow-style: scrollbar;
+  box-sizing: border-box;  
 }
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
-.container {
-  width: 100%;
+.container-full {
+  width: 100%;   
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {  
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -53,4 +58,47 @@ html {
 }
 .col-12 {
   width: 100%;
+}
+/* Media queries */
+@media screen and (min-width: 1825px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+@media screen and (max-width: 1824px) {
+  .container {
+    max-width: 1225px;
+  }
+}
+@media screen and (max-width: 1224px) {
+  .container {
+    max-width: 1025px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 992px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 481px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 321px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container {
+    max-width: 290px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
