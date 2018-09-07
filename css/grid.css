@@ -1,0 +1,56 @@
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row {
+  width: 100%;
+  display: flex;
+}
+.col-1 {
+  width: 8.3%;
+}
+.col-2 {
+  width: 16.6%;
+}
+.col-3 {
+  width: 24.9%;
+}
+.col-4 {
+  width: 33.2%;
+}
+.col-5 {
+  width: 41.5%;
+}
+.col-6 {
+  width: 49.8%;
+}
+.col-7 {
+  width: 58.1%;
+}
+.col-8 {
+  width: 66.4%;
+}
+.col-9 {
+  width: 74.7%;
+}
+.col-10 {
+  width: 83%;
+}
+.col-11 {
+  width: 91.3%;
+}
+.col-12 {
+  width: 100%;
+}
