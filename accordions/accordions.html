@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tabs to Accordions</title>
+</head>
+
+<body>
+    <ul class="tabs">
+        <li class="active" data-tab="tab1">Tab 1</li>
+        <li data-tab="tab2">Tab 2</li>
+        <li data-tab="tab3">Tab 3</li>
+    </ul>
+    <div class="tab_container">
+        <h3 class="d_active tab_drawer_heading" data-tab="tab1">Tab 1</h3>
+        <div id="tab1" class="tab_content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quo expedita voluptatibus quia veritatis ab
+                obcaecati sit neque officia veniam iusto minus eveniet vero, tenetur nesciunt itaque ipsum consectetur
+                sunt Lorem ipsum dolor sit amet consectetur adipisicing elit. At quo expedita voluptatibus quia
+                veritatis ab
+                obc.</p>
+        </div>
+        <h3 class="tab_drawer_heading" data-tab="tab2">Tab 2</h3>
+        <div id="tab2" class="tab_content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quo expedita voluptatibus quia veritatis ab
+                obcaecati sit neque officia veniam iusto minus eveniet vero, tenetur nesciunt itaque ipsum consectetur
+                sunt ipsum consectetur
+                sunt.</p>
+        </div>
+        <h3 class="tab_drawer_heading" data-tab="tab3">Tab 3</h3>
+        <div id="tab3" class="tab_content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quo expedita voluptatibus quia veritatis ab
+                obcaecati sit neque officia veniam iusto minus eveniet vero, tenetur nesciunt itaque ipsum consectetur
+                sunt eritatis ab
+                obcaecati sit neque officia veniam iusto minus eveniet vero, tenetur nesciunt itaque ipsum consectetur
+                sun.</p>
+        </div>
+    </div>
+    </div>
+    <script src="./jquery.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            $(".tab_content").hide();
+            $(".tab_content:first").show();
+            /* Tabs */
+            $("ul.tabs li").click(function () {
+                $(".tab_content").hide();
+                let activeTab = $(this).attr("data-tab");
+                $("#" + activeTab).fadeIn();
+                $("ul.tabs li").removeClass("active");
+                $(this).addClass("active");
+                $(".tab_drawer_heading").removeClass("d_active");
+                $(".tab_drawer_heading[data-tab^='" + activeTab + "']").addClass("d_active");
+            });
+            /* Accordion */
+            $(".tab_drawer_heading").click(function () {
+                $(".tab_content").hide();
+                let d_activeTab = $(this).attr("data-tab");
+                $("#" + d_activeTab).fadeIn();
+                $(".tab_drawer_heading").removeClass("d_active");
+                $(this).addClass("d_active");
+                $("ul.tabs li").removeClass("active");
+                $("ul.tabs li[data-tab^='" + d_activeTab + "']").addClass("active");
+            });
+            $('ul.tabs li').last().addClass("tab_last");
+        });
+    </script>
+</body>
+
+</html>
