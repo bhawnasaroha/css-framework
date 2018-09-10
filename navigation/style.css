@@ -1,0 +1,13 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-content ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-content li {
+  margin-left: 40px;
+}
