@@ -1,6 +1,16 @@
 .nav-bar {
   display: flex;
-  justify-content: space-between;
+}
+
+.nav-logo a {
+  padding: 8px 12px;
+  align-items: center;
+  display: flex;
+}
+
+.nav-content {
+  justify-content: flex-end;
+  display: flex;
 }
 
 .nav-content ul {
