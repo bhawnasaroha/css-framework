@@ -6,8 +6,11 @@
   --info: #00bcd9;
   --disable: #cbcbcb;
   --transparent: transparent;
-  --light: #d1d1d1;
+  --light: #f4f4f4;
+  --medium-light: #717171;
   --dark: #414141;
+  --white: #fff;
+  --black: #000;
   /* fonts */
   --small: 1rem;
   --medium: 1.4rem;
@@ -70,8 +73,20 @@ body {
   background-color: var(--light);
 }
 
+.bg-medium-light {
+  background-color: var(--medium-light);
+}
+
 .bg-dark {
   background-color: var(--dark);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-black {
+  background-color: var(--black);
 }
 
 /* buttons end */
@@ -100,8 +115,20 @@ body {
   color: var(--light);
 }
 
+.text-medium-light {
+  color: var(--medium-light);
+}
+
 .text-dark {
   color: var(--dark);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-black {
+  color: var(--black);
 }
 
 /* text color end */
@@ -130,3 +157,62 @@ a {
 .no-underline {
   text-decoration: none;
 }
+
+/* positions */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+.static {
+  position: static;
+}
+.sticky {
+  position: sticky;
+}
+.fixed {
+  position: fixed;
+}
+
+/* positions end */
+
+/* display classes */
+.d-none {
+  display: none;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.d-inline-grid {
+  display: inline-grid;
+}
+
+.d-table {
+  display: table;
+}
+
+/* display classes end */

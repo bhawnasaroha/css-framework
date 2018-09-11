@@ -12,7 +12,8 @@
 </head>
 
 <body>
-  <nav class="nav-bar bg-dark">
+  <!-- dark nav bar -->
+  <nav class="nav-bar nav-dark bg-dark">
     <div class="container">
       <div class="row">
         <div class="nav-logo col-4">
@@ -22,15 +23,105 @@
         </div>
         <div class="nav-content col-8">
           <ul>
-            <li><a class="text-light" href="">Item 1</a></li>
-            <li><a class="text-light" href="">Item 2</a></li>
-            <li><a class="text-light" href="">Item 3</a></li>
-            <li><a class="text-light" href="">Item 3</a></li>
+            <li><a class="text-light nav-link" href="javascript:void(0)">Item 1</a></li>
+            <li><a class="text-light nav-link" href="javascript:void(0)">Item 2</a></li>
+            <li class="dropdown">
+              <a class="text-light nav-link" href="javascript:void(0)">Item 3</a>
+              <div class="hover-dropdown bg-white">
+                <a class="dropdown-item" href="javascript:void(0)">Link 1</a>
+                <a class="dropdown-item" href="javascript:void(0)">Link 2</a>
+                <a class="dropdown-item" href="javascript:void(0)">Link 3</a>
+              </div>
+            </li>
+            <li><input class="input-box" type="text" placeholder="Search..."></li>
           </ul>
         </div>
       </div>
     </div>
   </nav>
+  <!-- dark nav bar ends -->
+  <!-- light nav bar -->
+  <nav class="nav-bar nav-light bg-light mt-20">
+    <div class="container">
+      <div class="row">
+        <div class="nav-logo col-4">
+          <a class="text-primary text-big" href="javascript:void(0)">
+            Navbar Logo
+          </a>
+        </div>
+        <div class="nav-content col-8">
+          <ul>
+            <li><a class="text-dark nav-link" href="javascript:void(0)">Item 1</a></li>
+            <li><a class="text-dark nav-link" href="javascript:void(0)">Item 2</a></li>
+            <li class="dropdown">
+              <a class="text-dark nav-link" href="javascript:void(0)">Item 3</a>
+              <div class="hover-dropdown bg-white">
+                <a class="dropdown-item" href="javascript:void(0)">Link 1</a>
+                <a class="dropdown-item" href="javascript:void(0)">Link 2</a>
+                <a class="dropdown-item" href="javascript:void(0)">Link 3</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- light nav bar ends -->
+  <!-- dark full nav bar -->
+  <nav class="nav-bar nav-full nav-dark bg-dark mt-20">
+    <div class="container-full">
+      <div class="row">
+        <div class="nav-logo col-4">
+          <a class="text-info text-big" href="javascript:void(0)">
+            Navbar Logo
+          </a>
+        </div>
+        <div class="nav-content col-8">
+          <ul>
+            <li><a class="text-light nav-link" href="javascript:void(0)">Item 1</a></li>
+            <li><a class="text-light nav-link" href="javascript:void(0)">Item 2</a></li>
+            <li class="dropdown">
+              <a class="text-light nav-link" href="javascript:void(0)">Item 3</a>
+              <div class="hover-dropdown bg-white">
+                <a class="dropdown-item" href="javascript:void(0)">Link 1</a>
+                <a class="dropdown-item" href="javascript:void(0)">Link 2</a>
+                <a class="dropdown-item" href="javascript:void(0)">Link 3</a>
+              </div>
+            </li>
+            <li><input class="input-box" type="text" placeholder="Search..."></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- dark full nav bar ends -->
+  <!-- light full nav bar -->
+  <nav class="nav-bar nav-full nav-light bg-light mt-20">
+    <div class="container-full">
+      <div class="row">
+        <div class="nav-logo col-4">
+          <a class="text-primary text-big" href="javascript:void(0)">
+            Navbar Logo
+          </a>
+        </div>
+        <div class="nav-content col-8">
+          <ul>
+            <li><a class="text-dark nav-link" href="javascript:void(0)">Item 1</a></li>
+            <li><a class="text-dark nav-link" href="javascript:void(0)">Item 2</a></li>
+            <li class="dropdown">
+              <a class="text-dark nav-link" href="javascript:void(0)">Item 3</a>
+              <div class="hover-dropdown bg-white">
+                <a class="dropdown-item" href="javascript:void(0)">Link 1</a>
+                <a class="dropdown-item" href="javascript:void(0)">Link 2</a>
+                <a class="dropdown-item" href="javascript:void(0)">Link 3</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- light full nav bar ends -->
 </body>
 
 </html>
