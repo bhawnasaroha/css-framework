@@ -34,6 +34,18 @@ body {
   text-align: left;
 }
 
+.lowercase {
+  text-transform: lowercase;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
 /* buttons start */
 .button-default {
   padding: 7px 15px;
@@ -166,12 +178,15 @@ a {
 .absolute {
   position: absolute;
 }
+
 .static {
   position: static;
 }
+
 .sticky {
   position: sticky;
 }
+
 .fixed {
   position: fixed;
 }

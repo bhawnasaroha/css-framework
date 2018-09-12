@@ -293,7 +293,7 @@ html {
   }
 }
 
-@media (min-width: 576px) {
+@media (max-width: 767px) {
   .container {
     max-width: 540px;
   }
@@ -365,7 +365,7 @@ html {
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 991px) {
   .container {
     max-width: 720px;
   }
@@ -437,7 +437,7 @@ html {
   }
 }
 
-@media (min-width: 992px) {
+@media (max-width: 1199px) {
   .container {
     max-width: 960px;
   }

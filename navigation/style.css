@@ -48,6 +48,7 @@
   background-color: var(--dark);
   color: var(--light);
 }
+
 .input-box {
   background-color: var(--transparent);
   border: 1px solid var(--light);
@@ -84,9 +85,10 @@
   transition: .2s ease-in-out;
   z-index: 10;
 }
+
 .nav-full .hover-dropdown {
   padding: 6px 10px 0px 9px;
-  width: 82px;  
+  width: 82px;
 }
 
 .dropdown:hover .hover-dropdown {
@@ -101,4 +103,29 @@
 
 .dropdown-item:hover {
   color: var(--info);
+}
+
+@media (max-width: 991px) {
+  .nav-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  .nav-content {
+    display: none;
+  }
+
+  .nav-responsive {
+    display: block;
+  }
+  .nav-responsive.fixed {
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: var(--dark);
+  }
 }
